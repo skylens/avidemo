@@ -98,12 +98,12 @@ func main() {
 
 	// 创建 http.Server
 	server := &http.Server{
-		Addr:    ":80",
+		Addr:    ":8080",
 		Handler: mux,
 	}
 
 	// 监听和服务
-	fmt.Println("Listening on port 80...")
+	fmt.Println("Listening on port 8080...")
 	server.ListenAndServe()
 }
 
